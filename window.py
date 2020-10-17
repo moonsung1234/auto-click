@@ -1,4 +1,3 @@
-
 from PIL import ImageGrab as Ig
 import pyautogui as pg
 import mouse
