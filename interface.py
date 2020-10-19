@@ -27,6 +27,21 @@ class Interface :
         self.mode = str(input("모드를 입력해주세요 : "))
         return self.mode
     
+    def init(self) :
+        self.mos = Mouse(False, self.pos_list, 5)
+        self.mos.init((109, 145, 236))
+
+    def move(self) :
+        self.mos.move()
+
+    def check(self) :
+        while True :
+            print("tlqkfkfkfkkdhokdsehldo")
+            self.mos.check()
+
+    def exit(self) :
+        self.mos.exit()
+
     def start(self) :
         rgb = (109, 145, 236) #win.getPositionRGB(self.pos_list[0])
         del self.pos_list[0]
